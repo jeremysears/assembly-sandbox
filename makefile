@@ -5,7 +5,7 @@ HelloWorld: HelloWorld.o
 	 echo "Linked $< to $@"
 
 HelloWorld64: HelloWorld64.o
-	ld -macosx_version_min 10.7.0 -lSystem -o $@ $<
+	ld -macosx_version_min 10.7.0 -lSystem -arch x86_64 -o $@ $<
 	echo "Linked $< to $@"
 
 HelloWorld.o : HelloWorld.asm
