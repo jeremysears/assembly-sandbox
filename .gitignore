@@ -4,7 +4,10 @@
 
 HelloWorld
 HelloWorld64
+ExampleProgram
+toc
 *.o
+lib
 
 ## Build generated
 build/

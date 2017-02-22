@@ -18,7 +18,7 @@ Display Load Commands:
 
 For fun, run `nm`, which outputs the exported symbol table:
 ```
-$ nm -a ExampleExportedSymbol.dylib
+$ nm -a libtoc.dylib
 0000000000000fb0 S _kTOC_MAGICAL_FUN
 0000000000000f90 T _toc_XX_unicode
 0000000000001000 D _toc_extern_export
@@ -28,8 +28,8 @@ $ nm -a ExampleExportedSymbol.dylib
 
 Strip the symbol table, and then re-run nm.  
 ```
-$ strip ExampleExportedSymbol.dylib
-$ nm -a ExampleExportedSymbol.dylib
+$ strip libtoc.dylib
+$ nm -a libtoc.dylib
 ```
 
 Unfortunately, nm uses the nlist symbol table to generate its output, and after
